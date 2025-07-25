@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelompok Wanita Tani (KWT) - Dukuh Daleman</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS Umum -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- CSS Khusus Halaman KWT -->
+  <link rel="stylesheet" href="css/kwt.css" />
+</head>
+<body>
+
+  <!-- Background transparan -->
+  <div class="background-overlay"></div>
+
+  <!-- Konten utama -->
+  <div class="main-content">
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">Dukuh Daleman</div>
+        <nav class="nav-desktop">
+          <a href="index.html" class="nav-link">Beranda</a>
+          <a href="profil.html" class="nav-link">Profil</a>
+          <div class="nav-link dropdown active">
+            <span class="dropdown-toggle">Organisasi</span>
+            <div class="dropdown-menu">
+            <a href="umkm.html" class="nav-link">UMKM</a>
+            <a href="kwt.html" class="nav-link active">KWT</a>
+            <a href="kelompoktani.html" class="nav-link">Kelompok Tani</a>
+            <a href="karangtaruna.html" class="nav-link">Karang Taruna</a>
+            <a href="duluruceng.html" class="nav-link">Dulur Uceng</a>
+            <a href="PKK.html" class="nav-link">PKK</a>
+            </div>
+          </div>
+          <a href="kontak.html" class="nav-link">Kontak Kami</a>
+        </nav>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+          <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu Mobile -->
+      <div class="nav-mobile hidden" id="mobileMenu">
+        <a href="index.html" class="nav-link-mobile">Beranda</a>
+        <a href="profil.html" class="nav-link-mobile">Profil</a>
+        <div class="nav-link-mobile dropdown-mobile active">
+          <span class="dropdown-toggle-mobile">Organisasi</span>
+          <div class="dropdown-menu-mobile">
+            <a href="umkm.html" class="nav-link-mobile">UMKM</a>
+            <a href="kwt.html" class="nav-link-mobile active">KWT</a>
+            <a href="kelompoktani.html" class="nav-link-mobile">Kelompok Tani</a>
+            <a href="karangtaruna.html" class="nav-link-mobile">Karang Taruna</a>
+          </div>
+        </div>
+        <a href="kontak.html" class="nav-link-mobile">Kontak Kami</a>
+      </div>
+    </header>
+
+    <!-- Konten KWT -->
+    <main class="hero-content">
+      <section class="section-kwt">
+        <h1 class="hero-title">Kelompok Wanita Tani (KWT)</h1>
+        <h2 class="section-title">Apa Itu KWT?</h2>
+        <p class="section-description">
+          KWT adalah kelompok yang beranggotakan para wanita Dukuh Daleman untuk berdaya melalui pertanian, pengolahan hasil tani, dan kegiatan sosial ekonomi. KWT juga mendukung ketahanan pangan keluarga dan pemberdayaan perempuan.
+        </p>
+      </section>
+
+      <section class="section-kwt-ketua">
+        <h2 class="section-title">Ketua KWT</h2>
+        <div class="kwt-ketua-layout">
+          <div class="kwt-ketua-img">
+            <img src="assets/logo.png" alt="Ketua KWT" />
+          </div>
+          <div class="kwt-ketua-sambutan">
+            <p><strong>- Ketua KWT Daleman</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-kwt-galeri">
+        <h2 class="section-title">Dokumentasi Kegiatan</h2>
+        <div class="kwt-gallery">
+          <div class="kwt-card">
+            <img src="assets/logo.png" alt="Pelatihan Olahan Pangan" />
+            <div class="kwt-card-info">
+              <h3>Pelatihan Olahan Pangan</h3>
+              <p>Keripik pisang dan olahan singkong untuk usaha rumahan.</p>
+              <span class="kwt-date">12 Mei 2025</span>
+            </div>
+          </div>
+
+          <div class="kwt-card">
+            <img src="assets/logo.png" alt="Kegiatan Menanam" />
+            <div class="kwt-card-info">
+              <h3>Menanam Sayur Organik</h3>
+              <p>Budidaya sayuran sehat di pekarangan rumah warga.</p>
+              <span class="kwt-date">20 Juni 2025</span>
+            </div>
+          </div>
+
+          <div class="kwt-card">
+            <img src="assets/logo.png" alt="Workshop Digital" />
+            <div class="kwt-card-info">
+              <h3>Workshop Pemasaran Digital</h3>
+              <p>Belajar promosi lewat media sosial dan marketplace.</p>
+              <span class="kwt-date">5 Juli 2025</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div> <!-- Penutup .main-content -->
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak Dukuh Daleman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header Navigasi -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">Logo</div>
+        <nav class="nav-desktop">
+          <a href="index.html" class="nav-link">Beranda</a>
+          <a href="profil.html" class="nav-link">Profil</a>
+          <div class="nav-link dropdown">
+            <span class="dropdown-toggle">Organisasi</span>
+            <div class="dropdown-menu">
+              <a href="umkm.html">UMKM</a>
+              <a href="kwt.html">KWT</a>
+              <a href="kelompoktani.html">Kelompok Tani</a>
+              <a href="karangtaruna.html">Karang Taruna</a>
+            </div>
+          </div>
+          <span class="nav-link active">Kontak Kami</span>
+        </nav>
+
+      <!-- Tombol Menu Mobile -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <!-- Ikon Menu (Hamburger) -->
+            <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+            <!-- Ikon Close (X) -->
+            <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6L6 18" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigasi Mobile -->
+        <div class="nav-mobile hidden" id="mobileMenu">
+          <a href="index.html" class="nav-link-mobile">Beranda</a>
+          <a href="profil.html" class="nav-link-mobile">Profil</a>
+          <div class="nav-link-mobile dropdown-mobile">
+          <span class="dropdown-toggle-mobile">Organisasi</span>
+          <div class="dropdown-menu-mobile">
+            <a href="umkm.html" class="nav-link">UMKM</a>
+            <a href="kwt.html" class="nav-link">KWT</a>
+            <a href="kelompoktani.html" class="nav-link">Kelompok Tani</a>
+            <a href="karangtaruna.html" class="nav-link">Karang Taruna</a>
+            <a href="duluruceng.html" class="nav-link">Dulur Uceng</a>
+            <a href="PKK.html" class="nav-link">PKK</a>
+          </div>
+          </div>
+          <a href="kontak.html" class="nav-link-mobile">Kontak Kami</a>
+        </div>
+    </header>
+
+    <!-- Main Konten -->
+    <main class="main">
+      <section class="contact-section">
+        <h1 class="hero-kontak">Kontak Padukuhan Daleman</h1>
+        <div class="kontak-peta">
+        <!-- Kolom (Kontak) -->
+          <div class="contact-info">
+            <h2>Informasi Kontak</h2>
+              <p><strong>Alamat:</strong> Padukuhan Daleman, Kalurahan Girikerto, Kapanewon Turi, Kabupaten Sleman, Yogyakarta</p>
+              <p><strong>Telepon:</strong> 08xx-xxxx-xxxx</p>
+              <p><strong>Email:</strong> dukuhdaleman@gmail.com</p>
+              <p><strong>Jam Layanan:</strong> Senin - Jumat, 08.00 - 16.00 WIB</p>
+          </div>
+
+        <!-- Kolom (Peta Lokasi) -->
+          <div class="map-section">
+            <h2>Lokasi Kami</h2>
+              <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.891662364275!2d110.3764111!3d-7.6395907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5e29302ed63d%3A0xe40eeb34f7abd29b!2sDaleman%2C%20Girikerto%2C%20Kec.%20Turi%2C%20Kabupaten%20Sleman%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1720500000000!5m2!1sid!2sid"
+                  width="100%"
+                  height="400"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+          <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-logo">
+                <img src="assets/logo.png" alt="Logo Daleman" />
+              </div>
+              <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>08xx-xxxx-xxxx</p>
+                <p>dukuhdaleman@gmail.com</p>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2025. Padukuhan Daleman - AB.83.100</p>
+            </div>
+          </footer>
+    </main>
+  </div>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>

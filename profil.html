@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dukuh Daleman - Website Resmi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Navigasi -->
+      <header class="header">
+        <div class="header-content">
+          <div class="logo">Logo</div>
+
+          <!-- Navigasi Desktop -->
+          <nav class="nav-desktop">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <span class="nav-link active">Profil</span>
+            
+            <!-- Dropdown Organisasi -->
+            <div class="nav-link dropdown">
+              <span class="dropdown-toggle">Organisasi</span>
+              <div class="dropdown-menu">
+                <a href="umkm.html" class="nav-link">UMKM</a>
+                <a href="kwt.html" class="nav-link">KWT</a>
+                <a href="kelompoktani.html" class="nav-link">Kelompok Tani</a>
+                <a href="karangtaruna.html" class="nav-link">Karang Taruna</a>
+                <a href="duluruceng.html" class="nav-link">Dulur Uceng</a>
+                <a href="PKK.html" class="nav-link">PKK</a>
+              </div>
+            </div>
+            <a href="kontak.html" class="nav-link">Kontak Kami</a>
+          </nav>
+
+          <!-- Tombol Menu Mobile -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <!-- Ikon Menu (Hamburger) -->
+            <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+            <!-- Ikon Close (X) -->
+            <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6L6 18" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigasi Mobile -->
+        <div class="nav-mobile hidden" id="mobileMenu">
+          <a href="index.html" class="nav-link-mobile">Beranda</a>
+          <span class="nav-link-mobile active">Profil</span>
+          <div class="nav-link-mobile dropdown-mobile">
+          <span class="dropdown-toggle-mobile">Organisasi</span>
+          <div class="dropdown-menu-mobile">
+            <a href="umkm.html">UMKM</a>
+            <a href="kwt.html">KWT</a>
+            <a href="kelompoktani.html">Kelompok Tani</a>
+            <a href="karangtaruna.html">Karang Taruna</a>
+            <a href="PKK.html">PKK</a>
+            <a href="duluruceng.html">Dulur Uceng</a>
+          </div>
+          </div>
+          <a href="kontak.html" class="nav-link-mobile">Kontak Kami</a>
+        </div>
+      </header>
+
+      <!-- Konten Utama -->
+      <main class="main">
+        <div class="hero">
+          <!-- Gambar Latar Belakang -->
+          <div class="hero-background"></div>
+          <div class="hero-overlay"></div>
+
+          <!-- Isi Hero Section -->
+          <div class="hero-content">
+            <h1 class="hero-title">Sejarah Dukuh Daleman</h1>
+            <div class="content-card">
+              <div class="card-layout">
+                <!-- Informasi Teks -->
+                <div class="text-content">
+                    <div class="text-info">
+                      <p class="website-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                            
+          <!-- Struktur Bagan Dukuh Daleman -->
+          <div class="hero-content">
+            <h1 class="hero-title">Struktur Bagan Dukuh Daleman</h1>
+            <div class="content-card">
+                <!-- Informasi Gambar -->
+                <div class="text-content">
+                  <div class="text-info">
+                    <img src="assets/bagandukuhdaleman.png" alt="Bagan Struktur Dukuh Daleman" class="struktur-gambar">
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Potensi Dukuh Daleman -->
+          <div class="hero-content">
+            <h1 class="hero-title">Potensi Dukuh Daleman</h1>
+
+            <!-- Potensi Alam -->
+            <div class="content-card">
+              <div class="potensi-wrapper">
+              <!-- TANAMAN -->
+              <h2 class="potensi-title">Tanaman</h2>
+              <div class="potensi-alam-card">
+                <p class="potensi-deskripsi">
+                  Dukuh Daleman memiliki berbagai potensi jenis tanaman seperti salak, talas, dan ketela pohon. Wilayah yang subur membuat pertanian menjadi mata pencaharian utama.
+                </p>
+                <div class="swiper tanaman-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/salak.jpg" alt="Salak" /></div>
+                    <div class="swiper-slide"><img src="assets/talas.jpg" alt="Talas" /></div>
+                    <div class="swiper-slide"><img src="assets/singkong.jpg" alt="Singkong" /></div>
+                  </div>
+                  <div class="swiper-button-next tanaman-next"></div>
+                  <div class="swiper-button-prev tanaman-prev"></div>
+                </div>
+              </div>
+            
+              <!-- HEWAN -->
+              <h2 class="potensi-title">Hewan</h2>
+              <div class="potensi-alam-card">
+                <p class="potensi-deskripsi">
+                  Masyarakat juga memelihara ayam, kambing, dan bebek sebagai kegiatan peternakan yang membantu ekonomi keluarga. Masyarakat juga melakukan budidaya perikanan seperti ikan nila, lele, dan yang lainnya.
+                </p>
+                <div class="swiper hewan-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/hewan1.jpg" alt="Hewan 1" /></div>
+                    <div class="swiper-slide"><img src="assets/hewan2.jpg" alt="Hewan 2" /></div>
+                    <div class="swiper-slide"><img src="assets/hewan3.jpg" alt="Hewan 3" /></div>
+                  </div>
+                  <div class="swiper-button-next hewan-next"></div>
+                  <div class="swiper-button-prev hewan-prev"></div>
+                </div>
+              </div>
+
+              <!-- SUNGAI -->
+              <h2 class="potensi-title">Sungai</h2>
+              <div class="potensi-alam-card">
+                <p class="potensi-deskripsi">
+                  Sungai yang mengalir di sekitar Dukuh Daleman dimanfaatkan untuk irigasi sawah dan kebutuhan air sehari-hari.
+                </p>
+                <div class="swiper sungai-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/sungai1.jpg" alt="Sungai 1" /></div>
+                    <div class="swiper-slide"><img src="assets/sungai2.jpg" alt="Sungai 2" /></div>
+                    <div class="swiper-slide"><img src="assets/sungai3.jpg" alt="Sungai 3" /></div>
+                  </div>
+                  <div class="swiper-button-next sungai-next"></div>
+                  <div class="swiper-button-prev sungai-prev"></div>
+                </div>
+              </div>
+
+              <!-- KAWI DASRI - Desa Wisata Daleman -->
+                <h2 class="potensi-title">🌿 Kawi Dasri - Desa Wisata Daleman</h2>
+                <div class="potensi-alam-card">
+                  <p class="potensi-deskripsi">
+                    Kawi Dasri adalah kawasan wisata lokal yang terletak di jantung Dukuh Daleman. Nama "Kawi Dasri" merupakan singkatan dari KAmpung WIsata DAleman asRI. 
+                    <br><br>
+                    Tempat ini mulai dikembangkan menjadi destinasi edukatif dan rekreatif berbasis potensi lokal. Pengunjung dapat menikmati wisata alam, belajar bertani, mengenal budaya lokal, dan mengikuti berbagai kegiatan masyarakat. Sangat cocok untuk liburan keluarga, komunitas, maupun edukasi anak-anak sekolah.
+                  </p>
+
+                  <!-- Swiper Gambar -->
+                  <div class="swiper kawi-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="assets/4oktokawi.JPG" alt="Kegiatan 4 Oktober 2019" /></div>
+                      <div class="swiper-slide"><img src="assets/8septkawi.JPG" alt="Kegiatan 8 September 2019" /></div>
+                      <div class="swiper-slide"><img src="assets/12meikawi.JPG" alt="Kegiatan 12 Mei 2019" /></div>
+                      <div class="swiper-slide"><img src="assets/13januarikawi.JPG" alt="Kegiatan 13 Januari 2019" /></div>
+                      <div class="swiper-slide"><img src="assets/13junikawi.JPG" alt="Kegiatan 13 Juni 2019" /></div>
+                      <div class="swiper-slide"><img src="assets/30junikawi.JPG" alt="Kegiatan 30 Juni 2019" /></div>
+                    </div>
+                    <div class="swiper-button-next kawi-next"></div>
+                    <div class="swiper-button-prev kawi-prev"></div>
+                  </div>
+
+                  <!-- Tombol Sosial Media -->
+                  <div style="margin-top: 20px; text-align: center;">
+                    <p style="font-weight: 600; font-size: 1.1rem;">Ikuti Kawi Dasri di Media Sosial:</p>
+                    <div style="display: flex; justify-content: center; gap: 1.2rem; margin-top: 10px;">
+                      <a href="https://www.instagram.com/kawidasri?utm_source=ig_web_button_share_sheet&igsh=MXYwczY3Zjd1OThydQ==" target="_blank" title="Instagram Kawi Dasri">
+                        <img src="assets/instagram.png" alt="Instagram" style="width: 40px; height: 40px; transition: transform 0.2s ease;">
+                      </a>
+                      <a href="https://youtube.com/@kampungwisatadalemanasri8214?si=iAM8iPc4IG6EjTch" target="_blank" title="YouTube Kawi Dasri">
+                        <img src="assets/youtube.png" alt="YouTube" style="width: 40px; height: 40px; transition: transform 0.2s ease;">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Potensi Budaya -->
+              <h2 class="section-title">Potensi Budaya</h2>
+              <h2 class="sub-title">Monumen Simon Slamet</h2>
+
+              <div class="potensi-alam-card">
+                <p class="potensi-deskripsi">
+                  Monumen Simon Slamet adalah tugu peringatan yang didirikan di Dusun Daleman, Girikerto, Turi, Sleman, untuk mengenang gugurnya Simon Slamet, anggota laskar rakyat yang tewas dalam pertempuran melawan Belanda pada 26 April 1949. Monumen ini berdiri di atas lahan seluas 400 m² dan dilengkapi dengan makam serta cungkup, simbol perjuangan rakyat. Pendirian monumen ini merupakan bentuk penghargaan dari warga atas jasa beliau dalam mempertahankan kemerdekaan.
+                </p>
+
+                <!-- Swiper Gambar -->
+                <div class="swiper kawi-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/MonumenSimon.jpg" alt="Monumen Simon Slamet" /></div>
+                    <div class="swiper-slide"><img src="assets/MonumenSimon2.jpg" alt="Monumen Simon Slamet" /></div>
+                    <div class="swiper-slide"><img src="assets/12meikawi.JPG" alt="Kegiatan 12 Mei 2019" /></div>
+                  </div>
+                  <div class="swiper-button-next kawi-next"></div>
+                  <div class="swiper-button-prev kawi-prev"></div>
+                </div>
+
+                <!-- Tombol Info -->
+                <div style="margin-top: 20px; text-align: center;">
+                  <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://pariwisata.slemankab.go.id/2017/04/22/monumen-simon-slamet/" target="_blank">
+                      <button style="padding: 10px 18px; background-color: #2a5d9f; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
+                        Info Selengkapnya
+                      </button>
+                    </a>
+                    <a href="https://maps.app.goo.gl/nBrBLiBe8p99GXAT7" target="_blank">
+                      <button style="padding: 10px 18px; background-color: #28a745; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
+                        Lihat di Google Maps
+                      </button>
+                    </a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+
+            <!-- Sarana & Prasarana -->
+            <h2 class="section-title">Sarana & Prasarana</h2>
+            <div class="content-card">
+              <div class="tokoh-wrapper">
+
+                <!-- Masjid -->
+                <div class="tokoh-card">
+                  <img src="assets/masjid1.jpg" alt="Masjid" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">Masjid Aisyah</p>
+                      <p class="tokoh-jabatan">Tempat ibadah umat Muslim di Dukuh Daleman bertempat di RW 022 RT 004</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/6Mh6meJT8QS5thpUA" class="btn-detail">Lihat Lokasi</a>
+                  </div>
+                </div>
+
+                <!-- Masjid -->
+                <div class="tokoh-card">
+                  <img src="assets/masjid2.jpg" alt="Masjid" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">Masjid Al-Huda</p>
+                      <p class="tokoh-jabatan">Tempat ibadah umat Muslim di Dukuh Daleman bertempat di RW 022 RT 003</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/dP4A97FrcC8TJvPz6" class="btn-detail">Lihat Lokasi</a>
+                  </div>
+                </div>
+
+                <!-- Masjid -->
+                <div class="tokoh-card">
+                  <img src="assets/logo.png" alt="Masjid" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">Masjid ]Baitul Ma'ruf (LDII)</p>
+                      <p class="tokoh-jabatan">Tempat ibadah umat Muslim LDII di Dukuh Daleman bertempat di RW 022 RT 004</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/Az54ZFm7esTVnKvT9" class="btn-detail">Lihat Lokasi</a>
+                  </div>
+                </div>
+
+                <!-- Gereja -->
+                <div class="tokoh-card">
+                  <img src="assets/gereja.jpg" alt="Gereja" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">Gereja Katolik Santo Yohanes Rasul</p>
+                      <p class="tokoh-jabatan">Tempat ibadah umat Katolik di Dukuh Daleman</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/eyC3RgnDYuZmgUjM9" class="btn-detail">Lihat Lokasi</a>
+                  </div>
+                </div>
+
+                <!-- TK 1 -->
+                <div class="tokoh-card">
+                  <img src="assets/tk.jpg" alt="TK" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">TK Indriyasana Somoitan</p>
+                      <p class="tokoh-jabatan">Fasilitas pendidikan untuk anak usia dini</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/bMTGjqYQzqRh7Bkj9" class="btn-detail">Lihat Lokasi</a>
+                  </div>
+                </div>
+
+                <!-- TK -->
+                <div class="tokoh-card">
+                  <img src="assets/tk.jpg" alt="TK" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">TK Aba Ponosaran</p>
+                      <p class="tokoh-jabatan">Fasilitas pendidikan untuk anak usia dini</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/ntE6457AaZ2wFj2W9" class="btn-detail">Lihat Lokasi</a>
+                  </div>
+                </div>
+
+                <!-- SD -->
+                <div class="tokoh-card">
+                  <img src="assets/sd somoitan.jpg" alt="Sekolah Dasar" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">Sekolah Dasar Somoitan</p>
+                      <p class="tokoh-jabatan">Fasilitas pendidikan dasar di Dukuh Daleman</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/pHEdtgas6pzR3oN46" class="btn-detail">Lihat Lokasi</a>
+                  </div>
+                </div>
+
+                <!-- Klinik -->
+                <div class="tokoh-card">
+                  <img src="assets/klinik.jpg" alt="Klinik" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">Klinik Citra Asri</p>
+                      <p class="tokoh-jabatan">Fasilitas kesehatan untuk masyarakat</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/tpWNmoFk2BXGo4VMA" class="btn-detail">Lihat Lokasi</a>
+                  </div>
+                </div>
+
+                <!-- Posyandu -->
+                <div class="tokoh-card">
+                  <img src="assets/posyandu.jpg" alt="Posyandu" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">Posyandu</p>
+                      <p class="tokoh-jabatan">Layanan kesehatan ibu dan anak</p>
+                    </div>
+                    <a href="detail-posyandu.html" class="btn-detail">Info Detail</a>
+                  </div>
+                </div>
+
+                <!-- Posyandu -->
+                <div class="tokoh-card">
+                  <img src="assets/posyandu.jpg" alt="Posyandu" class="tokoh-img" />
+                  <div class="tokoh-info">
+                    <div class="text-wrapper">
+                      <p class="tokoh-nama">Koperasi Merapi Mulian</p>
+                      <p class="tokoh-jabatan">Layanan kesehatan ibu dan anak</p>
+                    </div>
+                    <a href="detail-posyandu.html" class="btn-detail">Info Detail</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+     
+          <!-- Peta Administrasi Dukuh Daleman -->
+            <div class="hero-content">
+            <h1 class="hero-title">Pemetaan Dukuh Daleman</h1>
+            <!-- Peta Administrasi Dukuh Daleman -->
+            <section class="peta-admin-section">
+              <div class="peta-admin-container">
+                <!-- Penjelasan -->
+                <div class="peta-info">
+                  <h2 class="peta-heading">Informasi Administratif</h2>
+                  <p class="peta-text">
+                    <strong>Batas Wilayah:</strong><br>
+                    • Sebelah Utara: Soprayan<br>
+                    • Sebelah Timur: Nangsri Kidul<br>
+                    • Sebelah Barat: Kembang<br>
+                    • Sebelah Selatan: Ponosaran Kidul<br><br>
+
+                    <strong>Luas Wilayah:</strong><br>
+                    ± 56 hektar
+                  </p>
+                </div>
+
+                <!-- Peta Administrasi -->
+                <div class="peta-image-box">
+                  <img src="assets/petaadministrasi.png" alt="Peta Administrasi Dukuh Daleman" class="peta-image" />
+                </div>
+              </div>
+            </section>
+          </section>
+          
+          <!-- Peta Rawan Bencana Dukuh Daleman -->
+          <section class="peta-rawan-section">
+            <div class="hero-content">
+            <div class="peta-rawan-container">
+              <div class="peta-rawan-text">
+                <h2 class="hero-title">Peta Rawan Bencana Dukuh Daleman</h2>
+                  <div class="peta-gambar-wrapper">
+                     <img src="assets/petarawanbencana.jpg" alt="Peta Rawan Bencana Dukuh Daleman" class="peta-gambar" />
+                  </div>
+                <div class="visi-misi-card">
+                <p class="peta-description">
+                Peta Rawan Bencana Dukuh Daleman, Kalurahan Girikerto, Kapanewon Turi ini disusun oleh tim KKN AB.83.100 dan menyajikan informasi spasial berbasis citra Landsat yang merepresentasikan potensi aliran lava dari Gunung Merapi. Warna biru pada peta menunjukkan area lahan terbuka yang rentan dilalui aliran lava, sedangkan warna coklat mewakili lahan tertutup seperti vegetasi lebat atau permukiman padat. Garis merah menunjukkan jaringan sungai atau pola pengaliran yang berperan sebagai jalur utama aliran material vulkanik, sementara garis hitam menandai batas administratif Kalurahan Girikerto. Titik merah menunjukkan lokasi Desa Daleman, sedangkan titik biru menandai posko evakuasi BPBD. Peta ini menjadi alat penting dalam upaya kesiapsiagaan dan pengurangan risiko bencana erupsi Gunung Merapi di wilayah tersebut.
+                </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+          </div>
+
+          <!-- Footer -->
+          <footer class="footer">
+            <div class="footer-container">
+              <!-- Logo & Identitas -->
+              <div class="footer-logo">
+                <img src="assets/logo.png" alt="Logo Daleman" />
+              </div>
+
+              <!-- Kontak -->
+              <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                  <p>08xx-xxxx-xxxx</p>
+                  <p>dukuhdaleman@gmail.com</p>
+              </div>
+            </div>
+              <div class="footer-bottom">
+                <p>&copy; Copyright 2025. UPNVYK AB.83.100</p>
+              </div>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+/* Reset & Global */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Agar overlay bisa absolute terhadap body */
+  min-height: 100vh;
+}
+
+.background-overlay {
+  position: fixed; /* Supaya ikut scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/petaniberkebun.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Ini untuk atur tingkat transparansi */
+  z-index: -1; /* Biar ada di belakang konten */
+  filter: blur(2px); /* Blur langsung */
+}
+
+.main-content {
+  position: relative;
+  z-index: 1; /* Pastikan konten ada di atas overlay */
+  color: #fff; /* Warna teks agar tetap terbaca */
+}
+
+/* Hero Section */
+.hero-content {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+/* Section Titles & Descriptions */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.section-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: black;
+}
+
+/* Ketua Layout */
+.kwt-ketua-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.kwt-ketua-img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.kwt-ketua-img img:hover {
+  transform: scale(1.05);
+}
+
+.kwt-ketua-sambutan {
+  max-width: 550px;
+  background: #ffffffc9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Gallery Section */
+.kwt-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.kwt-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kwt-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.kwt-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.kwt-card-info {
+  padding: 1rem 1.25rem;
+}
+
+.kwt-card-info h3 {
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.kwt-card-info p {
+  font-size: 0.98rem;
+  color: #555;
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.kwt-date {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .kwt-ketua-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .kwt-ketua-sambutan {
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}

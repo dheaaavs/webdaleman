@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dukuh Daleman - Website Resmi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Navigasi -->
+      <header class="header">
+        <div class="header-content">
+          <div class="logo">Logo</div>
+
+          <!-- Navigasi Desktop -->
+          <nav class="nav-desktop">
+            <span class="nav-link active">Beranda</span>
+            <a href="profil.html" class="nav-link">Profil</a>
+
+            <!-- Dropdown Organisasi -->
+            <div class="nav-link dropdown">
+              <span class="dropdown-toggle">Organisasi</span>
+              <div class="dropdown-menu">
+                <a href="umkm.html" class="nav-link">UMKM</a>
+                <a href="kwt.html" class="nav-link">KWT</a>
+                <a href="kelompoktani.html" class="nav-link">Kelompok Tani</a>
+                <a href="karangtaruna.html" class="nav-link">Karang Taruna</a>
+                <a href="duluruceng.html" class="nav-link">Dulur Uceng</a>
+                <a href="PKK.html" class="nav-link">PKK</a>
+              </div>
+            </div>
+            <a href="kontak.html" class="nav-link">Kontak Kami</a>
+          </nav>
+
+          <!-- Tombol Menu Mobile -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <!-- Ikon Menu (Hamburger) -->
+            <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+            <!-- Ikon Close (X) -->
+            <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6L6 18" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigasi Mobile -->
+        <div class="nav-mobile hidden" id="mobileMenu">
+          <span class="nav-link-mobile active">Beranda</span>
+          <a href="profil.html" class="nav-link-mobile">Profil</a>
+          <div class="nav-link-mobile dropdown-mobile">
+          <span class="dropdown-toggle-mobile">Organisasi</span>
+          <div class="dropdown-menu-mobile">
+            <a href="umkm.html">UMKM</a>
+            <a href="kwt.html">KWT</a>
+            <a href="kelompoktani.html">Kelompok Tani</a>
+            <a href="karangtaruna.html">Karang Taruna</a>
+            <a href="PKK.html">PKK</a>
+            <a href="duluruceng.html">Dulur Uceng</a>
+          </div>
+          </div>
+          <a href="kontak.html" class="nav-link-mobile">Kontak Kami</a>
+        </div>
+      </header>
+
+      <!-- Konten Utama -->
+      <main class="main">
+        <div class="hero">
+          <!-- Gambar Latar Belakang -->
+          <div class="hero-background"></div>
+          <div class="hero-overlay"></div>
+
+          <!-- Isi Hero Section -->
+          <div class="hero-content">
+            <h1 class="hero-title">Selamat Datang</h1>
+
+            <div class="content-card">
+              <div class="card-layout">
+                <!-- Logo Dukuh -->
+                <div class="logo-section">
+                  <img
+                    src="assets/logo.png"
+                    alt="Logo Dukuh Daleman"
+                    class="village-logo"
+                  />
+                </div>
+
+                <!-- Informasi Teks -->
+                <div class="text-content">
+                  <div class="text-info">
+                    <p class="website-label">Website Resmi</p>
+                    <h2 class="village-name">RW 022 Daleman</h2>
+                    <h3 class="administrative-info">
+                      Kalurahan Girikerto Kapanewon Turi
+                    </h3>
+                  </div>
+
+                  <p class="location">Kabupaten Sleman, Yogyakarta</p>
+
+                  <!-- Tombol Tentang Kami -->
+                  <div class="button-section">
+                    <button class="about-btn" onclick="showAbout()">
+                      Tentang Kami
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Agnes -->
+            <section class="video-section">
+            <h2 class="hero-title">Video Padukuhan Daleman</h2>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/bkmoheSsmDQ"
+                title="YouTube video player"
+                allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+              <p class="video-caption">Dokumentasi kegiatan masyarakat di Padukuhan Daleman.</p>
+            </section>
+
+            <!-- Kata Sambutan -->
+            <section class="section-kwt-ketua">
+            <h2 class="hero-title">Kata Sambutan</h2>
+            <div class="kwt-ketua-layout">
+              <div class="kwt-ketua-img">
+                <img src="assets/wijayatma.png" alt="Kepala Dukuh Daleman" />
+              </div>
+              <div class="kwt-ketua-sambutan">
+                <p>
+                  "Assalamualaikum warahmatullahi wabarakatuh. Saya merasa bangga atas antusias dan kerja keras ibu-ibu dalam berbagai kegiatan KWT. Semoga KWT terus menjadi ruang tumbuh yang inklusif, produktif, dan bermanfaat bagi masyarakat."
+                </p>
+                <p><strong>- Wijayatma, Kepala Dukuh Daleman </strong></p>
+              </div>
+            </div>
+            </section>
+
+            <!-- Tokoh Masyarakat Padukuhan Daleman -->
+            <h1 class="hero-title">Tokoh Masyarakat Padukuhan Daleman</h1>
+                <div class="content-card">
+                  <div class="tokoh-wrapper">
+                    <!-- Tokoh 1 -->
+                    <div class="tokoh-card">
+                      <img src="assets/wijayatma.png" alt="Kepala Dukuh" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Wijayatma</p>
+                        <p class="tokoh-jabatan">Kepala Dukuh</p>
+                      </div>
+                    </div>
+
+                    <!-- Tokoh 2 -->
+                    <div class="tokoh-card">
+                      <img src="assets/logo.png" alt="Ketua RW 21" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Nugraha Espedhe</p>
+                        <p class="tokoh-jabatan">Ketua RW 21</p>
+                      </div>
+                    </div>
+
+                    <!-- Tokoh 3 -->
+                    <div class="tokoh-card">
+                      <img src="assets/logo.png" alt="Ketua RW 22" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Ketua RW 22</p>
+                        <p class="tokoh-jabatan">Ketua RW 22</p>
+                      </div>
+                    </div>
+
+                    <!-- Tokoh 4 -->
+                    <div class="tokoh-card">
+                      <img src="assets/logo.png" alt="Ketua RT 01" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Sukarjo</p>
+                        <p class="tokoh-jabatan">Ketua RT 01</p>
+                      </div>
+                    </div>
+                    
+                    <!-- Tokoh 5 -->
+                    <div class="tokoh-card">
+                      <img src="assets/logo.png" alt="Ketua RT 02" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Tri Yunianto</p>
+                        <p class="tokoh-jabatan">Ketua RT 02</p>
+                      </div>
+                    </div>
+
+                    <!-- Tokoh 6 -->
+                    <div class="tokoh-card">
+                      <img src="assets/pakrtdaleman.jpg" alt="Ketua RT 03" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Arif Kurniawan</p>
+                        <p class="tokoh-jabatan">Ketua RT 03</p>
+                      </div>
+                    </div>
+
+                    <!-- Tokoh 7 -->
+                    <div class="tokoh-card">
+                      <img src="assets/logo.png" alt="Ketua RT 04" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Renaldi Arfianto</p>
+                        <p class="tokoh-jabatan">Ketua RT 04</p>
+                      </div>
+                    </div>
+
+                    <!-- Tokoh 8 -->
+                    <div class="tokoh-card">
+                      <img src="assets/logo.png" alt="Ketua KWT" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Wida</p>
+                        <p class="tokoh-jabatan">Ketua KWT</p>
+                      </div>
+                    </div>
+
+                    <!-- Tokoh 9 -->
+                    <div class="tokoh-card">
+                      <img src="assets/ketuakelompoktani.png" alt="Ketua Kelompok Tani" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Kawadis</p>
+                        <p class="tokoh-jabatan">Ketua Kelompok Tani</p>
+                      </div>
+                    </div>
+
+                    <!-- Tokoh 10 -->
+                    <div class="tokoh-card">
+                      <img src="assets/rafaelagung.jpg" alt="Ketua Karang Taruna" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Rafael Agung</p>
+                        <p class="tokoh-jabatan">Ketua Karang Taruna</p>
+                      </div>
+                    </div>
+
+                    <!-- Tokoh 11 -->
+                    <div class="tokoh-card">
+                      <img src="assets/logo.png" alt="Ketua Desa Wisata" class="tokoh-img" />
+                      <div class="tokoh-info">
+                        <p class="tokoh-nama">Andri Rahmanto</p>
+                        <p class="tokoh-jabatan">Ketua Desa Wisata</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          <!-- Footer -->
+          <footer class="footer">
+            <div class="footer-container">
+              <!-- Logo & Identitas -->
+              <div class="footer-logo">
+                <img src="assets/logo.png" alt="Logo Daleman" />
+              </div>
+
+              <!-- Kontak -->
+              <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                  <p>08xx-xxxx-xxxx</p>
+                  <p>dukuhdaleman@gmail.com</p>
+              </div>
+            </div>
+              <div class="footer-bottom">
+                <p>&copy; Copyright 2025. UPNVYK AB.83.100</p>
+              </div>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
