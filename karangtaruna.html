@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
   <!-- CSS Umum -->
   <link rel="stylesheet" href="css/style.css" />
@@ -19,26 +21,55 @@
 <body>
   <div class="background-overlay"></div>
   <header class="header">
-    <div class="header-content">
-      <div class="logo">Logo</div>
-      <nav class="nav-desktop">
-        <a href="index.html" class="nav-link">Beranda</a>
-        <a href="profil.html" class="nav-link">Profil</a>
-        <div class="nav-link dropdown active">
-          <span class="dropdown-toggle">Organisasi</span>
-          <div class="dropdown-menu">
+      <div class="header-content">
+        <div class="logo">Dukuh Daleman</div>
+        <nav class="nav-desktop">
+          <a href="index.html" class="nav-link">Beranda</a>
+          <a href="profil.html" class="nav-link">Profil</a>
+          <div class="nav-link dropdown active">
+            <span class="dropdown-toggle">Organisasi</span>
+            <div class="dropdown-menu">
             <a href="umkm.html" class="nav-link">UMKM</a>
             <a href="kwt.html" class="nav-link">KWT</a>
             <a href="kelompoktani.html" class="nav-link">Kelompok Tani</a>
             <a href="karangtaruna.html" class="nav-link active">Karang Taruna</a>
             <a href="duluruceng.html" class="nav-link">Dulur Uceng</a>
             <a href="PKK.html" class="nav-link">PKK</a>
+            </div>
+          </div>
+          <a href="kontak.html" class="nav-link">Kontak Kami</a>
+        </nav>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+          <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu Mobile -->
+      <div class="nav-mobile hidden" id="mobileMenu">
+        <a href="index.html" class="nav-link-mobile">Beranda</a>
+        <a href="profil.html" class="nav-link-mobile">Profil</a>
+        <div class="nav-link-mobile dropdown-mobile active">
+          <span class="dropdown-toggle-mobile">Organisasi</span>
+          <div class="dropdown-menu-mobile">
+            <a href="umkm.html" class="nav-link-mobile">UMKM</a>
+            <a href="kwt.html" class="nav-link-mobile">KWT</a>
+            <a href="kelompoktani.html" class="nav-link-mobile">Kelompok Tani</a>
+            <a href="karangtaruna.html" class="nav-link-mobile active">Karang Taruna</a>
+            <a href="PKK.html" class="nav-link-mobile">PKK</a>
+            <a href="duluruceng.html" class="nav-link-mobile">Dulur Uceng</a>
           </div>
         </div>
-        <a href="kontak.html" class="nav-link">Kontak Kami</a>
-      </nav>
-    </div>
-  </header>
+        <a href="kontak.html" class="nav-link-mobile">Kontak Kami</a>
+      </div>
+    </header>
 
   <main class="hero-content">
     <h1 class="hero-title">Karang Taruna Dukuh Daleman</h1>
@@ -51,11 +82,23 @@
       </p>
     </section>
 
+    <!-- Ketua  -->
+    <section class="section-taruna-ketua">
+      <h2 class="section-title">Ketua</h2>
+      <div class="taruna-ketua-layout">
+        <div class="taruna-ketua-img">
+          <img src="assets/rafaelagung.jpg" alt="Ketua Karang Taruna" />
+        </div>
+        <div class="taruna-ketua-sambutan">
+          <p><strong>- Rafael Agung</strong></p>
+        </div>
+      </div>
+    </section>
+
     <!-- Struktur Pengurus Karang Taruna -->
     <section class="section-kt-struktur">
     <h2 class="section-title">Struktur Pengurus</h2>
     <ul class="struktur-list">
-        <li><strong>Ketua:</strong> Rafael Agung</li>
         <li><strong>Wakil Ketua:</strong> Sabrina Kurnia Putri</li>
         <li><strong>Sekretaris:</strong> Eldrida Gavrila</li>
         <li><strong>Bendahara:</strong> Aldora Gavrila</li>
@@ -68,70 +111,127 @@
         <h2 class="section-title">Kegiatan Karang Taruna</h2>
 
         <div class="kt-kegiatan-gallery">
-          
+
           <!-- Kegiatan 1 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="Lomba 17 Agustusan" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/kegiatan1-1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan1-2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan1-3.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan1-4.jpg" alt="Foto 4" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>Lomba 17 Agustusan</h3>
-              <p>Kegiatan tahunan yang dilaksanakan dalam rangka memperingati Hari Kemerdekaan Republik Indonesia. Berbagai lomba tradisional seperti balap karung, makan kerupuk, dan tarik tambang diadakan untuk memeriahkan suasana serta mempererat keakraban antarwarga.</p>
+              <p>Kegiatan tahunan dalam rangka Hari Kemerdekaan RI dengan lomba-lomba tradisional.</p>
               <span class="kt-date">10 Januari 2025</span>
             </div>
           </div>
 
           <!-- Kegiatan 2 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="Senam 17 Agustusan" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/kegiatan2-1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-3.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-4.jpg" alt="Foto 4" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>Senam 17 Agustusan</h3>
-              <p>Senam massal yang digelar bersama warga dalam semangat kemerdekaan. Selain sebagai bentuk olahraga bersama, kegiatan ini juga menjadi ajang kebersamaan lintas generasi dengan iringan musik semangat nasional.</p>
+              <p>Senam massal dengan semangat nasionalisme dan kebersamaan lintas usia.</p>
               <span class="kt-date">25 Maret 2025</span>
             </div>
           </div>
 
           <!-- Kegiatan 3 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="Nyinom" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_0596.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_0610.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_0614.JPG" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_0707.JPG" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_8741.JPG" alt="Foto 5" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>Nyinom</h3>
               <p>Nyinom adalah kegiatan kaum muda membantu tuan rumah yang sedang punya hajat. Salah satu tugas yang paling khas adalah menyajikan hidangan untuk para tamu.</p>
-              <span class="kt-date">12 Mei 2025</span>
+              <span class="kt-date">25 Maret 2025</span>
             </div>
           </div>
 
           <!-- Kegiatan 4 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="Lomba Memancing" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/kegiatan2-1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-3.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-4.jpg" alt="Foto 4" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>Lomba Memancing</h3>
               <p>Kegiatan santai dan kompetitif yang disukai oleh berbagai kalangan usia. Diadakan di sungai atau kolam sekitar padukuhan, lomba ini menjadi ajang hiburan sekaligus mempererat hubungan antarwarga.</p>
-              <span class="kt-date">20 Mei 2025</span>
+              <span class="kt-date">25 Maret 2025</span>
             </div>
           </div>
 
           <!-- Kegiatan 5 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="Lomba Takbir" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/kegiatan2-1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-3.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-4.jpg" alt="Foto 4" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>Lomba Takbir</h3>
               <p>Partisipasi Karang Taruna dalam lomba takbir antar dusun se-Kalurahan Girikerto saat menyambut Hari Raya Idul Fitri atau Idul Adha. Kegiatan ini menampilkan kreativitas dalam mengumandangkan takbir serta menghias kendaraan pawai.</p>
-              <span class="kt-date">7 Juni 2025</span>
+              <span class="kt-date">25 Maret 2025</span>
             </div>
           </div>
 
           <!-- Kegiatan 6 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="Jalan Santai 17 Agustusan" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/kegiatan2-1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-3.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/kegiatan2-4.jpg" alt="Foto 4" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>Jalan Santai 17 Agustusan</h3>
               <p>Kegiatan olahraga ringan yang dilakukan dengan rute mengelilingi padukuhan. Jalan santai ini sering disertai dengan pembagian doorprize, iring-iringan musik, dan antusiasme warga dalam mengenakan atribut kemerdekaan.</p>
-              <span class="kt-date">17 Agustus 2025</span>
+              <span class="kt-date">25 Maret 2025</span>
             </div>
           </div>
 
         </div>
       </section>
-
   </main>
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

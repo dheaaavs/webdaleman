@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
   <!-- CSS Umum -->
   <link rel="stylesheet" href="css/style.css" />
@@ -19,26 +21,55 @@
 <body>
   <div class="background-overlay"></div>
   <header class="header">
-    <div class="header-content">
-      <div class="logo">Logo</div>
-      <nav class="nav-desktop">
-        <a href="index.html" class="nav-link">Beranda</a>
-        <a href="profil.html" class="nav-link">Profil</a>
-        <div class="nav-link dropdown active">
-          <span class="dropdown-toggle">Organisasi</span>
-          <div class="dropdown-menu">
+      <div class="header-content">
+        <div class="logo">Dukuh Daleman</div>
+        <nav class="nav-desktop">
+          <a href="index.html" class="nav-link">Beranda</a>
+          <a href="profil.html" class="nav-link">Profil</a>
+          <div class="nav-link dropdown active">
+            <span class="dropdown-toggle">Organisasi</span>
+            <div class="dropdown-menu">
             <a href="umkm.html" class="nav-link">UMKM</a>
             <a href="kwt.html" class="nav-link">KWT</a>
             <a href="kelompoktani.html" class="nav-link">Kelompok Tani</a>
             <a href="karangtaruna.html" class="nav-link">Karang Taruna</a>
             <a href="duluruceng.html" class="nav-link active">Dulur Uceng</a>
             <a href="PKK.html" class="nav-link">PKK</a>
+            </div>
+          </div>
+          <a href="kontak.html" class="nav-link">Kontak Kami</a>
+        </nav>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+          <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu Mobile -->
+      <div class="nav-mobile hidden" id="mobileMenu">
+        <a href="index.html" class="nav-link-mobile">Beranda</a>
+        <a href="profil.html" class="nav-link-mobile">Profil</a>
+        <div class="nav-link-mobile dropdown-mobile active">
+          <span class="dropdown-toggle-mobile">Organisasi</span>
+          <div class="dropdown-menu-mobile">
+            <a href="umkm.html" class="nav-link-mobile">UMKM</a>
+            <a href="kwt.html" class="nav-link-mobile">KWT</a>
+            <a href="kelompoktani.html" class="nav-link-mobile">Kelompok Tani</a>
+            <a href="karangtaruna.html" class="nav-link-mobile">Karang Taruna</a>
+            <a href="PKK.html" class="nav-link-mobile">PKK</a>
+            <a href="duluruceng.html" class="nav-link-mobile active">Dulur Uceng</a>
           </div>
         </div>
-        <a href="kontak.html" class="nav-link">Kontak Kami</a>
-      </nav>
-    </div>
-  </header>
+        <a href="kontak.html" class="nav-link-mobile">Kontak Kami</a>
+      </div>
+    </header>
 
   <main class="hero-content">
     <h1 class="hero-title">Dulur Uceng</h1>
@@ -80,13 +111,23 @@
     
       <!-- Daftar Kegiatan -->
       <section class="section-kt-kegiatan">
-        <h2 class="section-title">Kegiatan Dulur Uceng</h2>
+        <h2 class="section-title">Kegiatan Karang Taruna</h2>
 
         <div class="kt-kegiatan-gallery">
-          
+
           <!-- Kegiatan 1 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="Peringatan Hari Air" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8617.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8631.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8648.JPG" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8656.JPG" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8674.JPG" alt="Foto 5" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>Peringatan Hari Air</h3>
               <p>Kegiatan untuk memperingati Hari Air Sedunia. Dulur Uceng bersama warga melakukan penanaman pohon, menebar benih ikan, dan membersihkan sungai. Tujuannya untuk menjaga kelestarian air dan lingkungan.</p>
@@ -96,7 +137,18 @@
 
           <!-- Kegiatan 2 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="Merti Kali" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_1751.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_1777.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_1805.JPG" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_2890.JPG" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_3105.JPG" alt="Foto 5" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_3122.JPG" alt="Foto 6" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>Merti Kali</h3>
               <p>Kegiatan syukuran untuk sungai yang diisi dengan penanaman pohon, penyebaran ikan, dan bersih-bersih. Kegiatan ini dihadiri oleh Bupati, Pak Lurah, Kecamatan, dan Dinas Lingkungan Hidup (DLH).</p>
@@ -106,26 +158,51 @@
 
           <!-- Kegiatan 3 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="Perilisan Ikan" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/perilisan ikan/IMG_4200.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/perilisan ikan/IMG_4214.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/perilisan ikan/IMG_4221.JPG" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/perilisan ikan/IMG_4226.JPG" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/perilisan ikan/IMG_4227.JPG" alt="Foto 5" /></div>
+                <div class="swiper-slide"><img src="assets/perilisan ikan/IMG_4256.JPG" alt="Foto 6" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>Perilisan Ikan</h3>
               <p>Kegiatan bersama anak-anak untuk menebar benih ikan ke sungai. Tujuannya melestarikan ikan sekaligus mengajarkan anak-anak mencintai lingkungan sejak dini.</p>
-              <span class="kt-date">12 Mei 2025</span>
+              <span class="kt-date">25 Maret 2025</span>
             </div>
           </div>
 
           <!-- Kegiatan 4 -->
           <div class="kt-card">
-            <img src="assets/logo.png" alt="PROKASI (Program Kali Bersih)" />
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/prokasih/IMG_8768.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/prokasih/IMG_8779.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/prokasih/IMG_8795.JPG" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/prokasih/IMG_8798.JPG" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/prokasih/IMG_8810.JPG" alt="Foto 4" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="kt-info">
               <h3>PROKASI (Program Kali Bersih)</h3>
               <p>Program rutin dari Dulur Uceng untuk membersihkan sungai dan sekitarnya. Warga diajak bersama-sama menjaga kebersihan dan tidak membuang sampah ke sungai.</p>
-              <span class="kt-date">20 Mei 2025</span>
+              <span class="kt-date">25 Maret 2025</span>
             </div>
           </div>
+
         </div>
       </section>
 
   </main>
+    <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

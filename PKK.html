@@ -14,31 +14,60 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- CSS PKK -->
-  <link rel="stylesheet" href="css/karangtaruna.css" />
+  <link rel="stylesheet" href="css/pkk.css" />
 </head>
 <body>
   <div class="background-overlay"></div>
   <header class="header">
-    <div class="header-content">
-      <div class="logo">Logo</div>
-      <nav class="nav-desktop">
-        <a href="index.html" class="nav-link">Beranda</a>
-        <a href="profil.html" class="nav-link">Profil</a>
-        <div class="nav-link dropdown active">
-          <span class="dropdown-toggle">Organisasi</span>
-          <div class="dropdown-menu">
+      <div class="header-content">
+        <div class="logo">Dukuh Daleman</div>
+        <nav class="nav-desktop">
+          <a href="index.html" class="nav-link">Beranda</a>
+          <a href="profil.html" class="nav-link">Profil</a>
+          <div class="nav-link dropdown active">
+            <span class="dropdown-toggle">Organisasi</span>
+            <div class="dropdown-menu">
             <a href="umkm.html" class="nav-link">UMKM</a>
             <a href="kwt.html" class="nav-link">KWT</a>
             <a href="kelompoktani.html" class="nav-link">Kelompok Tani</a>
             <a href="karangtaruna.html" class="nav-link">Karang Taruna</a>
             <a href="duluruceng.html" class="nav-link">Dulur Uceng</a>
             <a href="PKK.html" class="nav-link active">PKK</a>
+            </div>
+          </div>
+          <a href="kontak.html" class="nav-link">Kontak Kami</a>
+        </nav>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+          <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu Mobile -->
+      <div class="nav-mobile hidden" id="mobileMenu">
+        <a href="index.html" class="nav-link-mobile">Beranda</a>
+        <a href="profil.html" class="nav-link-mobile">Profil</a>
+        <div class="nav-link-mobile dropdown-mobile active">
+          <span class="dropdown-toggle-mobile">Organisasi</span>
+          <div class="dropdown-menu-mobile">
+            <a href="umkm.html" class="nav-link-mobile">UMKM</a>
+            <a href="kwt.html" class="nav-link-mobile">KWT</a>
+            <a href="kelompoktani.html" class="nav-link-mobile">Kelompok Tani</a>
+            <a href="karangtaruna.html" class="nav-link-mobile">Karang Taruna</a>
+            <a href="PKK.html" class="nav-link-mobile active">PKK</a>
+            <a href="duluruceng.html" class="nav-link-mobile">Dulur Uceng</a>
           </div>
         </div>
-        <a href="kontak.html" class="nav-link">Kontak Kami</a>
-      </nav>
-    </div>
-  </header>
+        <a href="kontak.html" class="nav-link-mobile">Kontak Kami</a>
+      </div>
+    </header>
 
   <main class="hero-content">
     <h1 class="hero-title">PKK</h1>
@@ -122,5 +151,7 @@
     </section>
 
   </main>
+  <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>

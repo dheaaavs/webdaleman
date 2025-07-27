@@ -119,3 +119,17 @@ new Swiper(".kawi-swiper", {
   },
 });
 
+// Inisialisasi semua swiper di halaman
+document.addEventListener('DOMContentLoaded', () => {
+  const sliders = document.querySelectorAll('.kegiatan-swiper');
+  sliders.forEach((slider) => {
+    new Swiper(slider, {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: slider.querySelector('.swiper-button-next'),
+        prevEl: slider.querySelector('.swiper-button-prev'),
+      },
+    });
+  });
+});

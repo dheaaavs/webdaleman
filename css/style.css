@@ -1273,3 +1273,108 @@ body {
   font-size: 1.8rem;
   margin-top: 0.1rem;
 }
+
+@media (max-width: 768px) {
+  .tokoh-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .tokoh-card {
+    width: calc(50% - 1rem);  /* 2 kolom, dikurangi gap */
+    max-width: none;
+  }
+}
+
+.kt-kegiatan-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Card */
+.kt-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gambar */
+.kt-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Info dalam card */
+.kt-info {
+  padding: 1rem;
+  color: #333;
+}
+
+.kt-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.kt-info p {
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.kt-date {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Responsive 1 kolom di layar kecil */
+@media (max-width: 768px) {
+  .kt-kegiatan-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    height: 200px;
+  }
+}
+
+.hero-kegiatan {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  max-width: 64rem;
+  line-height: 1.2;
+}
