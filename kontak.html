@@ -15,25 +15,35 @@
 <body>
   <div class="container">
     <!-- Header Navigasi -->
-    <header class="header">
-      <div class="header-content">
-        <div class="logo">Logo</div>
-        <nav class="nav-desktop">
-          <a href="index.html" class="nav-link">Beranda</a>
-          <a href="profil.html" class="nav-link">Profil</a>
-          <div class="nav-link dropdown">
-            <span class="dropdown-toggle">Organisasi</span>
-            <div class="dropdown-menu">
-              <a href="umkm.html">UMKM</a>
-              <a href="kwt.html">KWT</a>
-              <a href="kelompoktani.html">Kelompok Tani</a>
-              <a href="karangtaruna.html">Karang Taruna</a>
-            </div>
+      <header class="header">
+        <div class="header-content">
+           <!-- Logo -->
+          <div class="logo">
+            <img src="assets/Daleman.png" alt="Logo Dukuh Daleman" class="logo-img" />
+            <span class="logo-text">Dukuh Daleman</span>
           </div>
-          <span class="nav-link active">Kontak Kami</span>
-        </nav>
 
-      <!-- Tombol Menu Mobile -->
+          <!-- Navigasi Desktop -->
+          <nav class="nav-desktop">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="profil.html" class="nav-link">Profil</a>
+
+            <!-- Dropdown Organisasi -->
+            <div class="nav-link dropdown">
+              <span class="dropdown-toggle">Organisasi</span>
+              <div class="dropdown-menu">
+                <a href="umkm.html" class="nav-link">UMKM</a>
+                <a href="kwt.html" class="nav-link">KWT</a>
+                <a href="kelompoktani.html" class="nav-link">Kelompok Tani</a>
+                <a href="karangtaruna.html" class="nav-link">Karang Taruna</a>
+                <a href="duluruceng.html" class="nav-link">Dulur Uceng</a>
+                <a href="PKK.html" class="nav-link">PKK</a>
+              </div>
+            </div>
+            <a href="kontak.html" class="nav-link active">Kontak Kami</a>
+          </nav>
+
+          <!-- Tombol Menu Mobile -->
           <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
             <!-- Ikon Menu (Hamburger) -->
             <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -56,17 +66,17 @@
           <div class="nav-link-mobile dropdown-mobile">
           <span class="dropdown-toggle-mobile">Organisasi</span>
           <div class="dropdown-menu-mobile">
-            <a href="umkm.html" class="nav-link">UMKM</a>
-            <a href="kwt.html" class="nav-link">KWT</a>
-            <a href="kelompoktani.html" class="nav-link">Kelompok Tani</a>
-            <a href="karangtaruna.html" class="nav-link">Karang Taruna</a>
-            <a href="duluruceng.html" class="nav-link">Dulur Uceng</a>
-            <a href="PKK.html" class="nav-link">PKK</a>
+            <a href="umkm.html">UMKM</a>
+            <a href="kwt.html">KWT</a>
+            <a href="kelompoktani.html">Kelompok Tani</a>
+            <a href="karangtaruna.html">Karang Taruna</a>
+            <a href="PKK.html">PKK</a>
+            <a href="duluruceng.html">Dulur Uceng</a>
           </div>
           </div>
           <a href="kontak.html" class="nav-link-mobile active">Kontak Kami</a>
         </div>
-    </header>
+      </header>
 
     <!-- Main Konten -->
     <main class="main">
@@ -99,24 +109,26 @@
         </div>
       </section>
       <!-- Footer -->
-          <footer class="footer">
-            <div class="footer-container">
-              <div class="footer-logo">
-                <img src="assets/logo.png" alt="Logo Daleman" />
+            <footer class="footer">
+              <div class="footer-container">
+                <!-- Logo & Identitas -->
+                <div class="footer-logo">
+                  <img src="assets/Daleman.png" alt="Logo Daleman" />
+                </div>
+
+                <!-- Kontak -->
+                <div class="footer-contact">
+                  <h3>Hubungi Kami</h3>
+                    <p>08xx-xxxx-xxxx</p>
+                    <p>dukuhdaleman@gmail.com</p>
+                </div>
               </div>
-              <div class="footer-contact">
-                <h3>Hubungi Kami</h3>
-                <p>08xx-xxxx-xxxx</p>
-                <p>dukuhdaleman@gmail.com</p>
-              </div>
-            </div>
-            <div class="footer-bottom">
-              <p>&copy; 2025. Padukuhan Daleman - AB.83.100</p>
-            </div>
-          </footer>
+                <div class="footer-bottom">
+                  <p>&copy; Copyright 2025. UPNVYK AB.83.100</p>
+                </div>
+            </footer>
     </main>
   </div>
-
   <!-- Script -->
   <script src="js/script.js"></script>
 </body>
