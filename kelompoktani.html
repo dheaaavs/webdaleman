@@ -9,12 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
   <!-- CSS Umum -->
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- CSS Khusus Kelompok Tani -->
   <link rel="stylesheet" href="css/tani.css" />
+  <link rel="stylesheet" href="css/kwt.css" />
+
 </head>
 <body>
   <!-- Background transparan -->
@@ -28,7 +32,6 @@
             <img src="assets/Daleman.png" alt="Logo Dukuh Daleman" class="logo-img" />
             <span class="logo-text">Dukuh Daleman</span>
           </div>
-        <div class="logo">Dukuh Daleman</div>
         <nav class="nav-desktop">
           <a href="index.html" class="nav-link">Beranda</a>
           <a href="profil.html" class="nav-link">Profil</a>
@@ -102,44 +105,80 @@
       </div>
     </section>
 
-    <!-- Kegiatan -->
-    <section class="section-tani-kegiatan">
-      <h2 class="section-title">Kegiatan Kelompok Tani</h2>
-      <div class="tani-kegiatan-gallery">
-        <!-- Kegiatan 1 -->
-        <div class="tani-card">
-          <img src="assets/logo.png" alt="Pelatihan Traktor" />
-          <div class="tani-info">
-            <h3>Pelatihan Penggunaan Traktor</h3>
-            <p>Melatih anggota mengoperasikan dan merawat traktor mini modern.</p>
-            <span class="tani-date">5 Februari 2025</span>
-          </div>
-        </div>
+    <!-- Daftar Kegiatan -->
+      <section class="section-kt-kegiatan">
+        <h2 class="section-title">Kegiatan Dulur Uceng</h2>
 
-        <!-- Kegiatan 2 -->
-        <div class="tani-card">
-          <img src="assets/logo.png" alt="Gotong Royong Sawah" />
-          <div class="tani-info">
-            <h3>Gotong Royong Membersihkan Sawah</h3>
-            <p>Kegiatan rutin bersama membersihkan saluran irigasi dan gulma di sawah.</p>
-            <span class="tani-date">18 Maret 2025</span>
-          </div>
-        </div>
+        <div class="kt-kegiatan-gallery">
 
-        <!-- Kegiatan 3 -->
-        <div class="tani-card">
-          <img src="assets/logo.png" alt="Panen Raya" />
-          <div class="tani-info">
-            <h3>Panen Raya</h3>
-            <p>Panen padi bersama dan distribusi hasil untuk warga dan pasar lokal.</p>
-            <span class="tani-date">28 Juni 2025</span>
+          <!-- Kegiatan 1 -->
+          <div class="kt-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8617.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8631.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8648.JPG" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8656.JPG" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8674.JPG" alt="Foto 5" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kt-info">
+              <h3>Peringatan Hari Air 2016</h3>
+              <p>Kegiatan untuk memperingati Hari Air Sedunia. Dulur Uceng bersama warga melakukan penanaman pohon, menebar benih ikan, dan membersihkan sungai. Tujuannya untuk menjaga kelestarian air dan lingkungan.</p>
+              <span class="kt-date">10 Januari 2025</span>
+            </div>
           </div>
+
+          <!-- Kegiatan 2 -->
+          <div class="kt-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/peringatan hari air 2/IMG_20210328_104133.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air 2/IMG_20210328_104253.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air 2/IMG_20210407_091620.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air 2/IMG_20210407_094441.jpg" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air 2/IMG_20210411_091243.jpg" alt="Foto 5" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air 2/IMG_20210411_093232.jpg" alt="Foto 6" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kt-info">
+              <h3>Peringatan Hari Air 2021</h3>
+              <p>Kegiatan untuk memperingati Hari Air Sedunia. Dulur Uceng bersama warga melakukan penanaman pohon, menebar benih ikan, dan membersihkan sungai. Tujuannya untuk menjaga kelestarian air dan lingkungan.</p>
+              <span class="kt-date">10 Januari 2025</span>
+            </div>
+          </div>
+
+          <!-- Kegiatan 2 -->
+          <div class="kt-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_1751.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_1777.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_1805.JPG" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_2890.JPG" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_3105.JPG" alt="Foto 5" /></div>
+                <div class="swiper-slide"><img src="assets/merti kali/IMG_3122.JPG" alt="Foto 6" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kt-info">
+              <h3>Merti Kali</h3>
+              <p>Kegiatan syukuran untuk sungai yang diisi dengan penanaman pohon, penyebaran ikan, dan bersih-bersih. Kegiatan ini dihadiri oleh Bupati, Pak Lurah, Kecamatan, dan Dinas Lingkungan Hidup (DLH).</p>
+              <span class="kt-date">25 Maret 2025</span>
+            </div>
+          </div>
+
         </div>
-      </div>
-    </section>
+      </section>
   </main>
   </div>
   <!-- JavaScript -->
-    <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

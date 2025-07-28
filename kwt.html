@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
   <!-- CSS Umum -->
   <link rel="stylesheet" href="css/style.css" />
@@ -100,41 +102,38 @@
         </div>
       </section>
 
-      <section class="section-kwt-galeri">
-        <h2 class="section-title">Dokumentasi Kegiatan</h2>
-        <div class="kwt-gallery">
-          <div class="kwt-card">
-            <img src="assets/logo.png" alt="Pelatihan Olahan Pangan" />
-            <div class="kwt-card-info">
-              <h3>Pelatihan Olahan Pangan</h3>
-              <p>Keripik pisang dan olahan singkong untuk usaha rumahan.</p>
-              <span class="kwt-date">12 Mei 2025</span>
+      <!-- Daftar Kegiatan -->
+      <section class="section-kt-kegiatan">
+        <h2 class="section-title">Kegiatan KWT</h2>
+
+        <div class="kt-kegiatan-gallery">
+
+          <!-- Kegiatan 1 -->
+          <div class="kt-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8617.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8631.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8648.JPG" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8656.JPG" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/peringatan hari air/DSCN8674.JPG" alt="Foto 5" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kt-info">
+              <h3>Sosialisasi Ketahanan Pangan dan Beternak Bebek</h3>
+              <p>Kegiatan ini mengenalkan pentingnya ketahanan pangan dan cara beternak bebek sebagai sumber makanan dan penghasilan. Warga diberi pemahaman dasar tentang perawatan bebek, pakan, dan peluang usaha ternak.</p>
+              <span class="kt-date">10 Januari 2025</span>
             </div>
           </div>
 
-          <div class="kwt-card">
-            <img src="assets/logo.png" alt="Kegiatan Menanam" />
-            <div class="kwt-card-info">
-              <h3>Menanam Sayur Organik</h3>
-              <p>Budidaya sayuran sehat di pekarangan rumah warga.</p>
-              <span class="kwt-date">20 Juni 2025</span>
-            </div>
-          </div>
-
-          <div class="kwt-card">
-            <img src="assets/logo.png" alt="Workshop Digital" />
-            <div class="kwt-card-info">
-              <h3>Workshop Pemasaran Digital</h3>
-              <p>Belajar promosi lewat media sosial dan marketplace.</p>
-              <span class="kwt-date">5 Juli 2025</span>
-            </div>
-          </div>
         </div>
       </section>
     </main>
-
   </div> <!-- Penutup .main-content -->
   <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
