@@ -109,3 +109,8 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+    .kt-kegiatan-gallery {
+        grid-template-columns: 1fr;
+    }
+}
