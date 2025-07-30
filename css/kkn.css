@@ -8,15 +8,8 @@ body {
 
 .main-content {
   position: relative;
-  z-index: 1; /* Pastikan konten ada di atas overlay 
-  color: #fff; /* Warna teks agar tetap terbaca */
-}
-
-.hero-title {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #2e3a59;
-  margin-bottom: 2rem;
+  z-index: 1; 
+  color: #fff;
 }
 
 .section-title {
@@ -171,9 +164,10 @@ body {
 
 .section-kkn-anggota .anggota-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .anggota-card {
@@ -182,6 +176,7 @@ body {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
 }
 
 .anggota-card img {
@@ -270,9 +265,9 @@ body {
 
 /* Khusus tampilan anggota KKN */
 .section-kkn-anggota {
-  padding: 2rem 1rem;
   max-width: 1100px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .section-kkn-anggota .section-title {
@@ -280,65 +275,64 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   color: #2e3a59;
-}
-
-/* Grid Ketua (1 tengah) */
-.ketua-center {
-  display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
 }
 
-/* Grid 3 kolom */
-.tiga-kolom {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  justify-items: center;
-  margin-bottom: 2rem;
-}
-
-/* Grid 6 kolom */
-.enam-kolom {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  justify-items: center;
-}
-
-/* Kartu Anggota */
-.anggota-card {
-  background: #ffffffee;
-  padding: 1rem;
-  border-radius: 10px;
+/* CSS */
+.kkn-section {
+  padding: 20px 20px;
+  background: #f9f9f9;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
-.anggota-card:hover {
-  transform: translateY(-4px);
+.hero-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #1d1d1d;
+  margin-bottom: 40px;
+}
+
+.section-kkn-anggota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anggota-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.anggota-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .anggota-card img {
   width: 100%;
-  max-width: 160px;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
 }
 
 .anggota-card strong {
   display: block;
-  color: #2e3a59;
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 4px;
+  font-size: 15px;
+  color: #1f1f1f;
 }
 
 .anggota-card p {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #444;
+  font-size: 14px;
+  color: #666;
 }
+
 
