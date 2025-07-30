@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak Dukuh Daleman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/kkn.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header Navigasi -->
+      <header class="header">
+        <div class="header-content">
+           <!-- Logo -->
+          <div class="logo">
+            <img src="assets/Daleman.png" alt="Logo Dukuh Daleman" class="logo-img" />
+            <span class="logo-text">Dukuh Daleman</span>
+          </div>
+
+          <!-- Navigasi Deskknop -->
+          <nav class="nav-desktop">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="profil.html" class="nav-link">Profil</a>
+
+            <!-- Dropdown Organisasi -->
+            <div class="nav-link dropdown">
+              <span class="dropdown-toggle">Organisasi</span>
+              <div class="dropdown-menu">
+                <a href="umkm.html" class="nav-link">UMKM</a>
+                <a href="kwt.html" class="nav-link">KWT</a>
+                <a href="kelompokknani.html" class="nav-link">Kelompok Tani</a>
+                <a href="karangtaruna.html" class="nav-link">Karang Taruna</a>
+                <a href="duluruceng.html" class="nav-link">Dulur Uceng</a>
+                <a href="PKK.html" class="nav-link">PKK</a>
+              </div>
+            </div>
+            <a href="kkn.html" class="nav-link active">Pengabdian Masyarakat</a>
+            <a href="kontak.html" class="nav-link">Kontak Kami</a>
+          </nav>
+
+          <!-- Tombol Menu Mobile -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <!-- Ikon Menu (Hamburger) -->
+            <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+            <!-- Ikon Close (X) -->
+            <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6L6 18" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigasi Mobile -->
+        <div class="nav-mobile hidden" id="mobileMenu">
+          <a href="index.html" class="nav-link-mobile">Beranda</a>
+          <a href="profil.html" class="nav-link-mobile">Profil</a>
+          <div class="nav-link-mobile dropdown-mobile">
+          <span class="dropdown-toggle-mobile">Organisasi</span>
+          <div class="dropdown-menu-mobile">
+            <a href="umkm.html">UMKM</a>
+            <a href="kwt.html">KWT</a>
+            <a href="kelompokknani.html">Kelompok Tani</a>
+            <a href="karangtaruna.html">Karang Taruna</a>
+            <a href="PKK.html">PKK</a>
+            <a href="duluruceng.html">Dulur Uceng</a>
+          </div>
+          </div>
+          <a href="kkn.html" class="nav-link-mobile active">Pengabdian Masyarakat</a>
+          <a href="kontak.html" class="nav-link-mobile">Kontak Kami</a>
+        </div>
+      </header>
+
+    <!-- Main Konten -->
+    <main class="main">
+      <section class="kkn-section">
+        <section class="section-kkn-anggota">
+        <h1 class="hero-title">KKN UPNVYK AB 83.100</h2> 
+
+        <!-- Ketua -->
+        <div class="anggota-grid ketua-grid">
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/ketua.JPG" alt="Ketua">
+            <strong>Davinio Nathaniel Putra Buntoro</strong>
+            <p>Ketua</p>
+          </div>
+        </div>
+
+        <!-- Sekretaris dan Bendahara -->
+        <div class="anggota-grid tiga-grid">
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/sekre1.JPG" alt="Sekretaris 1">
+            <strong>Damelia Agnes D. Tampubolon</strong>
+            <p>Sekretaris</p>
+          </div>
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/bendahara.JPG" alt="Bendahara">
+            <strong>Maulaya Khalfi Asyisytry</strong>
+            <p>Bendahara</p>
+          </div>
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/sekre2.JPG" alt="Sekretaris 2">
+            <strong>Rolly Dhea Venesia Sibuea</strong>
+            <p>Sekretaris 2</p>
+          </div>
+        </div>
+
+        <!-- 6 Anggota Lainnya -->
+        <div class="anggota-grid enam-grid">
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/pdd1.JPG" alt="PDD 1">
+            <strong>Annisa Ratu Pinasti</strong>
+            <p>Bagian Foto-foto</p>
+          </div>
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/pdd2.JPG" alt="PDD 2">
+            <strong>Anissa Alfiana Lestari</strong>
+            <p>Bagian Foto-foto</p>
+          </div>
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/humas1.JPG" alt="Humas 1">
+            <strong>Marzqunial Hidayat Nasution</strong>
+            <p>Bestie Masyarakat</p>
+          </div>
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/humas2.JPG" alt="Humas 2">
+            <strong>Deva Assifaq Praditaningsih</strong>
+            <p>Bestie Masyarakat</p>
+          </div>
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/logis1.JPG" alt="Logistik 1">
+            <strong>Dika Rahmat Ardianto</strong>
+            <p>Bagian Angkat-angkat</p>
+          </div>
+          <div class="anggota-card">
+            <img src="assets/foto anak kkn/logis2.JPG" alt="Logistik 2">
+            <strong>Dhea Ayu Nur’aini</strong>
+            <p>Bagian Angkat-angkat</p>
+          </div>
+        </div>
+      </section>
+
+<!-- Program Kerja Utama-->
+      <h1 class="section-title">Program Kerja Utama</h1>
+      <div class="content-card">
+        <div class="potensi-wrapper">
+          <!-- POP -->
+            <div class="potensi-alam-card">
+              <h3 class="section-title">Pupuk Organik Padat</h3>
+              <p class="potensi-deskripsi">
+                Kegiatan ini bertujuan memberikan pemahaman kepada warga tentang pentingnya penggunaan pupuk organik padat, sekaligus pelatihan praktik pembuatannya dan strategi pemasaran sederhana agar hasil produksi dapat dimanfaatkan secara berkelanjutan.
+              </p>
+            <div class="swiperut tanaman-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/prokerut1.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/prokerut2.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/prokerut3.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/prokerut4.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/prokerut5.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/prokerut6.JPG"/></div>
+              </div>
+              <div class="swiper-button-next tanaman-next"></div>
+              <div class="swiper-button-prev tanaman-prev"></div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Program Kerja Utama Individu-->
+      <section class="section-kkn-kegiatan">
+        <h2 class="section-title">Program Kerja Individu</h2>
+
+        <div class="kkn-kegiatan-gallery">
+
+          <!-- Kegiatan 1 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/dika.jpg" alt="Foto 1" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Pembuatan Peta Administrasi Dukuh Daleman</h3>
+              <p>Membuat peta administrasi untuk mendokumentasikan batas wilayah, lokasi fasilitas umum di Dukuh Daleman sebagai acuan tata kelola dusun.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 2 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/davin.jpg" alt="Foto 1" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Pembuatan Peta Rawan Bencana</h3>
+              <p>Menyusun peta rawan bencana guna mengidentifikasi titik-titik potensial risiko di Dukuh Daleman sebagai langkah awal mitigasi dan kesiapsiagaan warga.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 3 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_0596.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_0610.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_0614.JPG" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_0707.JPG" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/nyinom/IMG_8741.JPG" alt="Foto 5" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Sosialisasi dan Pelatihan Pembuatan Serta Pemasaran Pestisida Nabati (PESNAB)</h3>
+              <p>Kegiatan ini bertujuan memberikan edukasi kepada warga mengenai cara membuat pestisida nabati ramah lingkungan sekaligus strategi sederhana untuk pemasarannya</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 4 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/agnes.jpg"/></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Pembuatan Video Company Profile</h3>
+              <p>Membuat video profil Dukuh Daleman yang menampilkan potensi, aktivitas warga, dan keunggulan dusun sebagai media promosi dan dokumentasi.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 5 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="assets/foto kegiatan kkn/dhea.jpg" alt="Foto 1" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Pembuatan Website RW 022 Daleman</h3>
+              <p>Mengembangkan website sebagai media informasi dan publikasi kegiatan RW 022 Daleman, guna mendukung transparansi dan keterhubungan antarwarga.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 6 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/sasa.jpg" alt="Foto 1" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Financial Literacy</h3>
+              <p>Memberikan pendampingan kepada pelaku UMKM dalam menyusun pembukuan keuangan sederhana agar usaha lebih tertata dan mudah dikembangkan.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 6 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/maul1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/maul2.jpg" alt="Foto 2" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Branding Produk UMKM</h3>
+              <p>Membantu UMKM dalam meningkatkan daya tarik produk melalui pendampingan desain kemasan, identitas merek, dan strategi promosi sederhana.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 6 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/ecoprint1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/ecoprint2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/ecoprint3.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/ecoprint4.jpg" alt="Foto 4" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Pemberdayaan dan Pelatihan Membatik Dengan Media Ecoprint</h3>
+              <p>Pelatihan membatik dengan teknik ecoprint yang ditujukan untuk ibu-ibu sebagai bentuk pemberdayaan dan pengembangan keterampilan kreatif yang bernilai ekonomis.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 6 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/karang taruna/jalan1.JPG" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/karang taruna/jalan2.JPG" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/karang taruna/jalan3.JPG" alt="Foto 3" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Pendampingan Edukasi Literasi Keuangan</h3>
+              <p>Kegiatan edukatif untuk anak-anak dalam bentuk mewarnai celengan sebagai sarana pengenalan konsep menabung sejak dini dengan cara yang menyenangkan.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 6 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/fun english/1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/fun english/2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/fun english/3.jpg" alt="Foto 3" /></div>\
+                <div class="swiper-slide"><img src="assets/fun english/4.jpg" alt="Foto 4" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Fun English</h3>
+              <p>Memberikan pendampingan kepada anak-anak sekolah dasar dalam belajar Bahasa Inggris dasar untuk meningkatkan kemampuan berbahasa dan kepercayaan diri sejak usia dini.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Program Kerja Utama Individu-->
+      <section class="section-kkn-kegiatan">
+        <h2 class="section-title">Program Pendukung</h2>
+
+        <div class="kkn-kegiatan-gallery">
+
+          <!-- Kegiatan 1 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/foto kegiatan kkn/dika.jpg" alt="Foto 1" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Gotong Royong Bersama</h3>
+              <p>Kegiatan kerja bakti membersihkan lingkungan sekitar yang melibatkan seluruh warga untuk mempererat kebersamaan dan menjaga kebersihan dusun.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 2 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/skj/skj1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/skj/skj2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/skj/skj3.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/skj/skj4.jpg" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/skj/skj5.jpg" alt="Foto 5" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Senam Kesehatan Jantung</h3>
+              <p>Mengadakan senam bersama warga sebagai upaya menjaga kesehatan jantung dan kebugaran jasmani secara rutin dan menyenangkan.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 3 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/posyandu/IMG_5473.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/posyandu/IMG_5488.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/posyandu/IMG_5494.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/posyandu/IMG_5503.jpg" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/posyandu/IMG_5512.jpg" alt="Foto 5" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Posyandu</h3>
+              <p>Mendukung pelaksanaan Posyandu sebagai wadah pemantauan kesehatan ibu dan balita melalui kegiatan penimbangan, imunisasi, dan edukasi gizi.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 4 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/hari anak/IMG_1038.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/hari anak/IMG_1093.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/hari anak/IMG_1105.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/hari anak/IMG_6371.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/hari anak/IMG_6374.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/hari anak/IMG_6385.JPG"/></div>
+                <div class="swiper-slide"><img src="assets/hari anak/IMG_6386.JPG"/></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Lomba Memperingati Hari Anak Nasional</h3>
+              <p>Mengadakan berbagai lomba edukatif dan menyenangkan dalam rangka memperingati Hari Anak Nasional sebagai bentuk apresiasi dan ruang ekspresi bagi anak-anak.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 5 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="assets/foto kegiatan kkn/dhea.jpg" alt="Foto 1" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Bimbel Anak-anak</h3>
+              <p>Pendampingan belajar bagi anak-anak sekolah dasar untuk membantu mereka memahami materi pelajaran dan meningkatkan semangat belajar.</p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 6 -->
+          <div class="kkn-card">
+            <div class="swiper kegiatan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/tpa/tpa1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="assets/tpa/tpa2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="assets/tpa/tpa3.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="assets/tpa/tpa4.jpg" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="assets/tpa/tpa5.jpg" alt="Foto 5" /></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="kkn-info">
+              <h3>Mengajar TPA</h3>
+              <p>Kegiatan pengajaran Taman Pendidikan Al-Qur'an (TPA) bagi anak-anak di Dukuh Daleman untuk menumbuhkan kecintaan terhadap Al-Qur'an dan nilai-nilai keislaman sejak dini.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      
+      </section>
+      <!-- Footer -->
+            <footer class="footer">
+              <div class="footer-container">
+                <!-- Logo & Identitas -->
+                <div class="footer-logo">
+                  <img src="assets/Daleman.png" alt="Logo Daleman" />
+                </div>
+
+                <!-- Kontak -->
+                <div class="footer-contact">
+                  <h3>Hubungi Kami</h3>
+                    <p>08xx-xxxx-xxxx</p>
+                    <p>dukuhdaleman@gmail.com</p>
+                </div>
+              </div>
+                <div class="footer-bottom">
+                  <p>&copy; Copyright 2025. UPNVYK AB.83.100</p>
+                </div>
+            </footer>
+    </main>
+  </div>
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
